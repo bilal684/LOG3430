@@ -30,7 +30,7 @@ public class TP1TestEC {
 	}
 
 	@Test
-	public void testUnionCharsIntegers() throws IOException {
+	public void testUnionAB34() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -45,13 +45,13 @@ public class TP1TestEC {
 		
 		MyList resultat = suiteChainee.build("union", val1, val2);
 		
-		assertEquals(null, resultat.getAt(2));
+		assertEquals(0, resultat.getAt(2).size());
 
 		
 	}
 	
 	@Test
-	public void testIntersectionOnlyIntegers() throws IOException {
+	public void testIntersection3234() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -75,7 +75,7 @@ public class TP1TestEC {
 	}
 	
 	@Test
-	public void testDifferenceCharsIntegers() throws IOException {
+	public void testDifferences32CD() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -94,7 +94,7 @@ public class TP1TestEC {
 	}
 
 	@Test
-	public void testSymetricDifferenceOnlyIntegers() throws IOException {
+	public void testSymetricDifference3234() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -117,7 +117,7 @@ public class TP1TestEC {
 
 	
 	@Test
-	public void testIsSubsetCharsIntegers() throws IOException {
+	public void testIsSubset32CD() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -135,7 +135,7 @@ public class TP1TestEC {
 	}
 	
 	@Test
-	public void testIsSupersetIntegers() throws IOException {
+	public void testIsSuperset3234() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
@@ -153,7 +153,7 @@ public class TP1TestEC {
 	}
 	
 	@Test
-	public void testOtherOperatorIntegers() throws IOException {
+	public void testOtherOperator3234() throws IOException {
 		
 		ArrayList<Object> val1 = new ArrayList<Object>();
 		ArrayList<Object> val2 = new ArrayList<Object>();
