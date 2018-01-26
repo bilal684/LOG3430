@@ -28,6 +28,13 @@ public class TP1TestEC {
 		System.setErr(System.err);
 	}
 
+	/**
+	 * Test EC_1 - UnionAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : union
+	 * Expected result : null
+	 * */
 	@Test
 	public void testUnionAB34() throws IOException {
 
@@ -46,6 +53,13 @@ public class TP1TestEC {
 		assertEquals(null, resultat.getAt(2));
 	}
 
+	/**
+	 * Test EC_2 - Intersection3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : intersection
+	 * Expected result : {3}
+	 * */
 	@Test
 	public void testIntersection3234() throws IOException {
 
@@ -67,6 +81,13 @@ public class TP1TestEC {
 		assertEquals(expectedResult, resultat.getAt(2));
 	}
 
+	/**
+	 * Test EC_3 - Differences32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : difference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testDifferences32CD() throws IOException {
 
@@ -85,6 +106,13 @@ public class TP1TestEC {
 		assertEquals(null, resultat.getAt(2));
 	}
 
+	/**
+	 * Test EC_4 - SymetricDifference3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : symDifference
+	 * Expected result : {2,4}
+	 * */
 	@Test
 	public void testSymetricDifference3234() throws IOException {
 
@@ -106,6 +134,13 @@ public class TP1TestEC {
 		assertEquals(expectedResult, result.getAt(2));
 	}
 
+	/**
+	 * Test EC_5 - IsSubset32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : isSubset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSubset32CD() throws IOException {
 
@@ -123,6 +158,13 @@ public class TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
+	/**
+	 * Test EC_6 - IsSuperset3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSuperset
+	 * Expected result : false
+	 * */
 	@Test
 	public void testIsSuperset3234() throws IOException {
 
@@ -140,6 +182,13 @@ public class TP1TestEC {
 		assertEquals(false, Boolean.getBoolean(result.getAt(2).toString()));
 	}
 
+	/**
+	 * Test EC_7 - OtherOperator3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : allo
+	 * Expected result : true
+	 * */
 	@Test
 	public void testOtherOperator3234() throws IOException {
 

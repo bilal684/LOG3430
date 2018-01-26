@@ -20,13 +20,25 @@ public class TP1TestAC extends TP1TestEC {
 		super.restoreStreams();
 	}
 
-	// a,b,3,4 union
+	/**
+	 * Test AC_1 - UnionAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Union
+	 * Expected result : null
+	 * */
 	@Test
 	public void testUnionAB34() throws IOException {
 		super.testUnionAB34();
 	}
 
-	// a,b,c,d union
+	/**
+	 * Test AC_2 - UnionABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Union
+	 * Expected result : null
+	 * */
 	@Test
 	public void testUnionABCD() throws IOException {
 
@@ -45,7 +57,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// 3, 2, 3, 4 union
+	/**
+	 * Test AC_3 - Union3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Union
+	 * Expected result : {3,2,3,4}
+	 * */
 	@Test
 	public void testUnion3234() throws IOException {
 
@@ -68,7 +86,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(expectedResult, result.getAt(2));
 	}
 
-	// 3,2,c,d union
+	/**
+	 * Test AC_4 - Union32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Union
+	 * Expected result : null
+	 * */
 	@Test
 	public void testUnion32CD() throws IOException {
 
@@ -87,7 +111,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,3,4 intersection
+	/**
+	 * Test AC_5 - IntersectionAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Intersection
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIntersectionAB34() throws IOException {
 
@@ -106,7 +136,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,c,d intersection
+	/**
+	 * Test AC_6 - IntersectionABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Intersection
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIntersectionABCD() throws IOException {
 
@@ -126,13 +162,25 @@ public class TP1TestAC extends TP1TestEC {
 
 	}
 
-	// 3,2,3,4 intersection
+	/**
+	 * Test AC_7 - Intersection3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Intersection
+	 * Expected result : {3}
+	 * */
 	@Test
 	public void testIntersection3234() throws IOException {
 		super.testIntersection3234();
 	}
 
-	// 3,2,c,d intersection
+	/**
+	 * Test AC_8 - Intersection32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Intersection
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIntersection32CD() throws IOException {
 
@@ -152,7 +200,13 @@ public class TP1TestAC extends TP1TestEC {
 
 	}
 
-	// a,b,3,4 differences
+	/**
+	 * Test AC_9 - DifferencesAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Difference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testDifferencesAB34() throws IOException {
 
@@ -171,7 +225,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,c,d differences
+	/**
+	 * Test AC_10 - DifferencesABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Difference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testDifferencesABCD() throws IOException {
 
@@ -190,7 +250,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// 3,2,3,4 differences
+	/**
+	 * Test AC_11 - Differences3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : Difference
+	 * Expected result : {2}
+	 * */
 	@Test
 	public void testDifferences3234() throws IOException {
 
@@ -213,13 +279,25 @@ public class TP1TestAC extends TP1TestEC {
 
 	}
 
-	// 3,2,c,d differences
+	/**
+	 * Test AC_12 - Differences32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : Difference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testDifferences32CD() throws IOException {
 		super.testDifferences32CD();
 	}
 
-	// a,b,3,4 symmDiff
+	/**
+	 * Test AC_13 - SymetricDifferenceAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : symDifference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testSymetricDifferenceAB34() throws IOException {
 
@@ -238,7 +316,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,c,d symmDiff
+	/**
+	 * Test AC_14 - SymetricDifferenceABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : symDifference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testSymetricDifferenceABCD() throws IOException {
 
@@ -257,13 +341,25 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// 3,2,3,4 symmDiff
+	/**
+	 * Test AC_15 - SymetricDifference3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : symDifference
+	 * Expected result : {2,4}
+	 * */
 	@Test
 	public void testSymetricDifference3234() throws IOException {
 		super.testSymetricDifference3234();
 	}
 
-	// 3,2,c,d symmDiff
+	/**
+	 * Test AC_16 - SymetricDifference32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : symDifference
+	 * Expected result : null
+	 * */
 	@Test
 	public void testSymetricDifference32CD() throws IOException {
 
@@ -281,7 +377,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,3,4 issubset
+	/**
+	 * Test AC_17 - IsSubsetAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSubset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSubsetAB34() throws IOException {
 
@@ -299,7 +401,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,c,d issubset
+	/**
+	 * Test AC_18 - IsSubsetABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : isSubset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSubsetABCD() throws IOException {
 
@@ -317,7 +425,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// 3,2,3,4 issubset
+	/**
+	 * Test AC_19 - IsSubset3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSubset
+	 * Expected result : false
+	 * */
 	@Test
 	public void testIsSubset3234() throws IOException {
 
@@ -335,13 +449,25 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(false, Boolean.getBoolean(result.getAt(2).toString()));
 	}
 
-	// 3,2,c,d
+	/**
+	 * Test AC_20 - IsSubset32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : isSubset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSubset32CD() throws IOException {
 		super.testIsSubset32CD();
 	}
 
-	// a,b,3,4 isSuperset
+	/**
+	 * Test AC_21 - IsSupersetAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSuperset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSupersetAB34() throws IOException {
 
@@ -359,7 +485,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,c,d isSuperset
+	/**
+	 * Test AC_22 - IsSupersetABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSuperset
+	 * Expected result : null
+	 * */
 	@Test
 	public void testIsSupersetABCD() throws IOException {
 
@@ -377,13 +509,25 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// 3,2,3,4 isSuperset
+	/**
+	 * Test AC_23 - IsSuperset3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSuperset
+	 * Expected result : false
+	 * */
 	@Test
 	public void testIsSuperset3234() throws IOException {
 		super.testIsSuperset3234();
 	}
 
-	// 3,2,c,d isSuperset
+	/**
+	 * Test AC_24 - IsSuperset32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : isSuperset
+	 * Expected result : false
+	 * */
 	@Test
 	public void testIsSuperset32CD() throws IOException {
 
@@ -401,7 +545,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(null, result.getAt(2));
 	}
 
-	// a,b,3,4 allo
+	/**
+	 * Test AC_25 - OtherOperatorAB34
+	 * VAL1 : {a,b}
+	 * VAL2 : {3,4}
+	 * OPERATOR : allo
+	 * Expected result : true
+	 * */
 	@Test
 	public void testOtherOperatorAB34() throws IOException {
 
@@ -420,7 +570,13 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(true, outContent.toString().contains("operateur allo non identif"));
 	}
 
-	// a,b,c,d allo
+	/**
+	 * Test AC_26 - OtherOperatorABCD
+	 * VAL1 : {a,b}
+	 * VAL2 : {c,d}
+	 * OPERATOR : allo
+	 * Expected result : true
+	 * */
 	@Test
 	public void testOtherOperatorABCD() throws IOException {
 
@@ -439,13 +595,25 @@ public class TP1TestAC extends TP1TestEC {
 		assertEquals(true, outContent.toString().contains("operateur allo non identif"));
 	}
 
-	// 3,2,3,4 allo
+	/**
+	 * Test AC_27 - OtherOperator3234
+	 * VAL1 : {3,2}
+	 * VAL2 : {3,4}
+	 * OPERATOR : allo
+	 * Expected result : true
+	 * */
 	@Test
 	public void testOtherOperator3234() throws IOException {
 		super.testOtherOperator3234();
 	}
 
-	// 3,2,c,d allo
+	/**
+	 * Test AC_28 - OtherOperator32CD
+	 * VAL1 : {3,2}
+	 * VAL2 : {c,d}
+	 * OPERATOR : allo
+	 * Expected result : true
+	 * */
 	@Test
 	public void testOtherOperator32CD() throws IOException {
 
