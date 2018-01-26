@@ -488,7 +488,7 @@ public class TP1TestAC extends TP1TestEC {
 	/**
 	 * Test AC_22 - IsSupersetABCD
 	 * VAL1 : {a,b}
-	 * VAL2 : {3,4}
+	 * VAL2 : {c,d}
 	 * OPERATOR : isSuperset
 	 * Expected result : null
 	 * */
