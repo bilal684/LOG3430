@@ -92,7 +92,7 @@ public class MyListImpl implements MyList{
 		current.setContent(item);
 	}
 	
-
+	
 	
 	public ArrayList<Object> getAt(int pos) {
 		if(pos > size) {
