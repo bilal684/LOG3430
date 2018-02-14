@@ -207,6 +207,11 @@ public class TP2TestJacoco {
 		assertEquals(true, outContent.toString().contains("operateur allo non identif"));
 	}
 	
+	/**
+	 * Test TP2 - testRemoveAt0
+	 * Permet de s’assurer que le retrait d’un objet à l’index 0 de ListeChainee se fait adéquatement
+	 * */
+	
 	@Test
 	public void testRemoveAt0() throws IOException {
 
@@ -227,6 +232,11 @@ public class TP2TestJacoco {
 		assertEquals(sizeBeforeRemove - 1, result.getSize());
 	}
 	
+	/**
+	 * Test TP2 - testRemoveAt3
+	 * Permet de s’assurer qu’une exception de type ArrayIndexOutOfBoundsException est lancé lorsque l’on essaie 
+	 * de retirer un objet alors que l’index indiqué dépasse la taille de ListeChainee.
+	 * */
 	@Test()
 	public void testRemoveAt3() throws IOException {
 
@@ -255,6 +265,11 @@ public class TP2TestJacoco {
 		
 	}
 	
+	/**
+	 * Test TP2 - testRemoveAt2
+	 * Permet de s’assurer que le retrait d’un objet à un index différents de 0 et inférieur à la taille 
+	 * de ListeChainee se fait adéquatement.
+	 * */
 	@Test
 	public void testRemoveAt2() throws IOException {
 
@@ -275,6 +290,11 @@ public class TP2TestJacoco {
 		assertEquals(sizeBeforeRemove - 1, result.getSize());
 	}
 
+	/**
+	 * Test TP2 - testReset
+	 * Permet de s’assurer que la méthode reset permet de bien ré-initialiser un objet de la classe 
+	 * ListeChainee.
+	 * */
 	@Test
 	public void testReset() throws IOException {
 
@@ -294,6 +314,11 @@ public class TP2TestJacoco {
 		assertEquals(0, result.getSize());
 	}
 	
+	/**
+	 * Test TP2 - testSetAt
+	 * Permet de s’assurer que la méthode setAt assigne adéquatement une valeur fourni en paramètre 
+	 * à un index valide.
+	 * */
 	@Test
 	public void testSetAt() throws IOException {
 
@@ -320,6 +345,11 @@ public class TP2TestJacoco {
 		assertEquals(val3, result.getAt(1));
 	}
 	
+	/**
+	 * Test TP2 - testSetAtException
+	 * Permet de s’assurer que la méthode setAt jette bien une exception lorsqu’elle est appelée 
+	 * à assigner une valeur à un index plus grand que la taille de l’objet de type ListeChainee.
+	 * */
 	@Test
 	public void testSetAtException() throws IOException {
 
@@ -353,6 +383,10 @@ public class TP2TestJacoco {
 		
 	}
 	
+	/**
+	 * Test TP2 - testRemoveExistingItem
+	 * Permet de s’assurer que la méthode removeItem retire adéquatement un objet de la ListeChainee.
+	 * */
 	@Test
 	public void testRemoveExistingItem() throws IOException {
 
@@ -374,6 +408,11 @@ public class TP2TestJacoco {
 		assertEquals(sizeBeforeRemove - 1, result.getSize());
 	}
 	
+	/**
+	 * Test TP2 - testRemoveAbsentItem
+	 * Permet de s’assurer que la méthode removeItem retire adéquatement un objet de la ListeChainee
+	 * à l’aide de plusieurs itérations.
+	 * */
 	@Test
 	public void testRemoveAbsentItem() throws IOException {
 
@@ -399,6 +438,11 @@ public class TP2TestJacoco {
 		assertEquals(sizeBeforeRemove - 1, result.getSize());
 	}
 	
+	/**
+	 * Test TP2 - testGetAtException
+	 * Permet de s’assurer que la méthode getAt lance une exception lorsque l’index 
+	 * fourni à la méthode est plus grand que la taille de l’objet ListeChainee.
+	 * */
 	@Test
 	public void testGetAtException() throws IOException {
 
