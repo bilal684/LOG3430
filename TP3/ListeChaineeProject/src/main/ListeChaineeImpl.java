@@ -7,7 +7,6 @@
 package main;
 
 import java.io.IOException;
-import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 import java.util.Collections;
 
