@@ -88,7 +88,13 @@ public class ListeChaineeImpl implements ListeChainee {
 		list = sortList(list, ascendingSort);
 		return list;
 	}
-	
+
+	/**
+	 * Cette méthode permet d'effectuer le tri d'une liste en ordre croissant ou en ordre décroissant.
+	 * @param list
+	 * @param ascendingSort
+	 * @return 
+	 */
 	private MyList sortList(MyList list, boolean ascendingSort)
 	{
 		ArrayList<Object> myList = list.getAt(2);
