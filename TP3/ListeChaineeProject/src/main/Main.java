@@ -21,14 +21,14 @@ public class Main {
 		ArrayList<Object> val2 = new ArrayList<Object>();
 		
 		val1.add(4);
-		val1.add(1);
-		val2.add(1);
-		val2.add(1);
+		val1.add(3);
+		val2.add(5);
+		val2.add(2);
 ///////////////////////////////////////////////////listeChainee////////////////////////////////////////		
 		MyList list = new MyListImpl();	
 		ListeChainee suiteChainee= new ListeChaineeImpl();
 		
-		list = suiteChainee.build("isSuperset", val1, val2);
+		list = suiteChainee.build("union", val1, val2, true, 2, 3);
 //////////////////////////////////////////////////listeChainee printer//////////////////////////////////	
 		StringBuilder chaineContent=new StringBuilder();
 		for(int i=0; i<list.getSize();i++){
