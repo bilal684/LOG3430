@@ -1,0 +1,41 @@
+**********Classe Enum**********
+
+Pour l'attribut content:
+
+C, setContent
+
+Pour l'attribut next
+
+C, setNext
+
+**********Fin Classe Enum************
+**********Classe MyListImpl**********
+
+Pour les attributs start et size (Les reporters de chaque attributs ont été enlevées pour alléger l'écriture, mais ils sont appelés après chaque transformers)
+
+C, add, removeAt, removeItem, reset, setAt, getAt
+C, add, removeAt, reset, removeItem, setAt, getAt
+C, add, reset, removeAt, removeItem, setAt, getAt
+C, add, reset, removeItem, removeAt, setAt, getAt
+
+C, removeAt, add, removeItem, reset, setAt, getAt
+C, removeAt, add, reset, removeItem, setAt, getAt
+C, removeAt, reset, add, removeItem, setAt, getAt
+C, removeAt, reset, removeItem, add, setAt, getAt
+
+C, removeItem, add, removeAt, reset, setAt, getAt
+C, removeItem, add, reset, removeAt, setAt, getAt
+C, removeItem, reset, add, removeAt, setAt, getAt
+C, removeItem, reset, removeAt, add, setAt, getAt
+
+C, reset, add, removeAt, removeItem, setAt, getAt
+C, reset, add, removeItem, removeAt, setAt, getAt
+C, reset, removeItem, add, removeAt, setAt, getAt
+C, reset, removeItem, removeAt, add, setAt, getAt
+
+Pour l'attribut current (Les reporters ont été enlevées pour alléger l'écriture, mais ils sont appelés après chaque transformers)
+
+C, add, reset
+C, reset, add
+
+**********Fin Classe MyListImpl************
