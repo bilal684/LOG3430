@@ -143,5 +143,13 @@ public class MyListImpl implements MyList{
 		start  = null;
 		current = start;
 	}
+	
+	public Elem getStart() {
+		return start;
+	}
+
+	public Elem getCurrent() {
+		return current;
+	}
 
 }
