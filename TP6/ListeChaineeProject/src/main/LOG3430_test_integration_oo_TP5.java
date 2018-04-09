@@ -1,5 +1,7 @@
 package main;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -7,10 +9,12 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
+import main.MyListImpl.Elem;
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LOG3430_test_integration_oo_TP5 {
 
-	/*@Test
+	@Test
 	public void test_niveau_1() {
 		//MyListImpl(MyList), methode add.
 		ArrayList<Object> setA = new ArrayList<Object>();
@@ -57,32 +61,6 @@ public class LOG3430_test_integration_oo_TP5 {
 		element1.setContent(list);
 		myList = element1.getContent();
 		assertEquals(list.get(1), myList.get(1));		
-	}*/
-	@Test
-	public void test() throws IOException {
-		//MyListImpl(MyList), methode add.
-		ArrayList<Object> setA = new ArrayList<Object>();
-		setA.add(1);
-		setA.add(3);
-		ArrayList<Object> setB = new ArrayList<>();
-		setB.add(2);
-		setB.add(3);
-		ListeChaineeImpl lci = new ListeChaineeImpl();
-		MyList result = lci.build(1, setA, setB, false);
-		int i = 0;
-		i++;
-		/*assertEquals(1, myList.getSize());
-		assertEquals(setA, ((MyListImpl)myList).getStart().getContent());
-		assertEquals(setA, ((MyListImpl)myList).getCurrent().getContent());
-		
-		//SetCalculatorImpl(SetCalculator), methode intersection.
-		SetCalculator sc = new SetCalculatorImpl();
-		ArrayList<Object> setB = new ArrayList<Object>();
-		setB.add(3);
-		setB.add(6);
-		ArrayList<Object> result = sc.intersection(setA, setB);
-		assertEquals(1, result.size());
-		assertEquals(3, result.get(0));*/
 	}
 
 }
