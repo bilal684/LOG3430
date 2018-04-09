@@ -28,7 +28,7 @@ public class Main {
 		MyList list = new MyListImpl();	
 		ListeChainee suiteChainee= new ListeChaineeImpl();
 		
-		list = suiteChainee.build("isSuperset", val1, val2);
+		list = suiteChainee.build(1, val1, val2, true);
 //////////////////////////////////////////////////listeChainee printer//////////////////////////////////	
 		StringBuilder chaineContent=new StringBuilder();
 		for(int i=0; i<list.getSize();i++){
