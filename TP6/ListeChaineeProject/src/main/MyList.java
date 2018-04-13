@@ -11,5 +11,4 @@ public interface MyList{
 	ArrayList<Object> getAt(int pos);
 	int getSize();
 	void reset();
-	
 }

@@ -42,20 +42,7 @@ public class SetCalculatorImpl implements SetCalculator {
 		    tmpB = intersection(setA, setB);
 		    return difference(tmpA, tmpB);
 		  }
-
-		  public <T> ArrayList<T> isSubset(ArrayList<Object> setA, ArrayList<Object> setB) {
-			  ArrayList<T> tmp = new ArrayList<T>();
-			  tmp.add((T) String.valueOf(setB.containsAll(setA)));
-		    return tmp;
-		  }
-
-		  public <T> ArrayList<T> isSuperset(ArrayList<Object> setA, ArrayList<Object> setB) {
-			  ArrayList<T> tmp = new ArrayList<T>(); 
-			  tmp.add((T) String.valueOf(setA.containsAll(setB)));
-			  return tmp;
-		  }
-		  
-		  
+		  		  
 //		  public static <T> Set<T> union(Set<T> setA, Set<T> setB) {
 //			    Set<T> tmp = new TreeSet<T>(setA);
 //			    tmp.addAll(setB);
